@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Butterfly</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .my-header,
+      .my-footer {
+        background: #00b3dc;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+      }
+
+      .my-header {
+        position: sticky;
+        top: 0;
+        margin: 0;
+        z-index: 2;
+        padding: 10px 0;
+      }
+
+      .my-footer {
+        position: relative;
+      }
+
+      .thumb {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+      }
+
+      .share {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+      }
+      .round-1 {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        z-index: 1;
+      }
+      .round-2 {
+        position: absolute;
+        top: 5%;
+        left: 33%;
+      }
+      .round-3 {
+        position: absolute;
+        top: 5%;
+        right: 33%;
+      }
+      .round-4 {
+        position: absolute;
+        bottom: 5%;
+        left: 33%;
+      }
+      .round-5 {
+        position: absolute;
+        bottom: 5%;
+        right: 33%;
+      }
+      .round-6 {
+        position: absolute;
+        top: 0;
+        left: 45%;
+      }
+      .round-7 {
+        position: absolute;
+        top: 33%;
+        left: 25%;
+      }
+      .round-8 {
+        position: absolute;
+        top: 33%;
+        right: 25%;
+      }
+
+      .my-logo {
+        height: 200px;
+        background-size: contain;
+        background-position: center;
+        background-image: url("https://www.enjpg.com/img/2020/blue-butterfly-7.jpg");
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .butter-1,
+      .butter-2,
+      .butter-3 {
+        padding: 5px;
+        background: #00b3dc;
+      }
+
+      .butter-2 {
+        position: relative;
+        top: 65px;
+        right: 25px;
+        z-index: 1;
+        box-shadow: antiquewhite;
+      }
+
+      .butter-3 {
+        top: 125px;
+        right: 50px;
+        position: relative;
+      }
+
+      .whole-content {
+        padding-left: 150px;
+      }
+
+      .sidebar {
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        width: 150px;
+        top: 0;
+      }
+      .sidebar i {
+        padding: 10px;
+      }
+
+      .my-content {
+        margin: 25px;
+        border: 5px solid #f1f1f1;
+        padding: 25px;
+        text-align: justify;
+        box-shadow: 16px 11px 14px -6px rgb(241 241 241 / 75%);
+      }
+
+      .sidebar a {
+        padding: 10px 15px 10px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .image-relative {
+        margin: 2% 0 12%;
+        text-align: center;
+      }
+      .round-image img {
+        border-radius: 50%;
+        border: 5px solid yellow;
+      }
+      .round-image {
+        position: relative;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a href="#"><i class="fa fa-map" aria-hidden="true"></i>Static</a>
+      <a href="#"><i class="fa fa-map"></i> Relative</a>
+      <a href="#"><i class="fa fa-map"></i> Absolute</a>
+      <a href="#"><i class="fa fa-map"></i> Fixed</a>
+      <a href="#"><i class="fa fa-map"></i> Sticky</a>
+    </div>
+    <div class="whole-content">
+      <div class="my-logo"></div>
+      <h1 class="my-header">Beautiful Butterfly</h1>
+      <div class="my-content">
+        Butterflies are fascinating insects and easy to observe in the field.
+        They belong to the Lepidoptera family, a word of Greek origin meaning
+        'wings with scales', which includes both daytime butterflies and moths
+        or nighttime butterflies. It is these wings full of pigmented and
+        reflective scales that give the butterflies their spectacular and
+        striking colour. Besides being so pleasant to observe, these colours
+        play a very important role in the reproduction and survival of
+        butterflies. According to the latest research, the colours of
+        butterflies are the product of small structures in the wings, called
+        gyros, which refract sunlight like a prism. And, believe it or not, it
+        turns out that only one gene is responsible for regulating these rich
+        colour patterns, as demonstrated in a study published in the Proceedings
+        of the National Academy of Sciences (PNAS) in 2017. The researchers used
+        the CRISP/Cas gene-editing technique to inactivate the gene and observe
+        changes in the colouration of the butterfly's wings. What they observed
+        is that this gene, called WntA, is the same for all butterfly species,
+        but it works differently in each species and even expresses itself in
+        different areas of the wings: sometimes in the veins and sometimes at
+        the base of the wings.
+
+        <div class="image-relative">
+          <img
+            class="butter-1"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg"
+            alt="not found"
+          />
+          <img
+            class="butter-2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkoPlnGm4-QjGVSlrtBWhT9ikYoWTT9gbcA&usqp=CAU"
+            alt="not found"
+          />
+          <img
+            class="butter-3"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD509hT_b4kuZwOjafaVTwvgv9xIkSFPYpeg&usqp=CAU"
+            alt="not-found"
+          />
+        </div>
+        The complexity of these small scales that form the wings of the
+        butterflies is such that each one of them has a unique structure, a fact
+        that has even inspired the creation of technology to armour credit cards
+        and documents against possible falsifications. This has been done by a
+        Serbian company, which has named the technology Teslagram and applies
+        the scales of naturally dead butterflies to any object to be protected,
+        including works of art. Butterflies are fascinating and we are
+        discovering more and more amazing things about them. For example, a
+        recent study published in Frontiers in Ecology and Evolution in 2016
+        found that the butterfly species Graphium Sarpedon has fifteen types of
+        photoreceptors in its eye, a record in the world of insects and which
+        allows it to detect a variety of different colours. In this gallery, we
+        will show you some of the most beautiful butterflies in the world. We
+        also remind you that the survival of many butterflies, like that of
+        other pollinators, is today compromised, among other things, by the
+        abusive use of herbicides and insecticides.
+        <h1>Evolution of Butterflies</h1>
+        A few scientists believe that butterflies primarily emerged from the
+        Cretaceous period, which is often referred to as “The Age of Flowering
+        Plants”. This period occurred 65 million to 135 million years ago,
+        apparently the time when dinosaurs used to roam around the earth. This
+        belief stemmed from the basis of how in today’s times, there is such a
+        dedicated and particular association between butterflies and flowering
+        plants. Another distinct theory suggests that butterflies are relatives
+        or family members of an obscure moth family that is called the
+        Hedylidae. So, because these moths are the closest living relatives of
+        butterflies, according to which butterflies are nothing but a group of
+        brightly colored moths.
+        <div class="my-content round-image">
+          <img
+            class="round-1"
+            src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBidXR0ZXJmbHl8ZW58MHx8MHx8&w=1000&q=80"
+            alt="not found"
+          />
+          <img
+            class="round-2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQlYghP2nNvpkQLRHxZiaSm91ePe2thLgoQ&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-3"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNHw--4xDjFcUeW_imb7kIJC5aemP3JURyw&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-4"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuz_FmKxwjwdPJEnUH7yg9eyxdeA81vPyKJO1d0-7iA9GEnHycjPZ4IifOXuzmKA-qtjI&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-5"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzIBdzz8MF4v7d_UNOUZcvzkn8MVCz-5Iu6dmLJ_KbsgXFEWwrqhlD7umb-VeqRMMpeI&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-6"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgTPl68KJ9pdVPYO_Lr-q4G3mvD9pW6TJV3uMd24gfYo8eyMvOjME2neR9tKjptJHWlE&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-7"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgq7mzJX-bvQloLThb05V9Rqwl7FQQT4FqAW1eoGp4Ep4RBOVZPmAQzvf15GOsvPwJ38&usqp=CAU"
+            alt="not-found"
+          />
+          <img
+            class="round-8"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrCBGjJdy2tEuKWqC1TK4THQTxXVawVRoB4A&usqp=CAU"
+            alt="not-found"
+          />
+        </div>
+        Butterflies are the most beautiful insect among all insects and bugs.
+        Butterflies are beautiful for their wings. There are some who break
+        their wings and let them die. Butterflies sit on the flower and take the
+        juice from the flower. This liquid is called nectar, and it is their
+        food. The butterfly also lay their eggs on flowers and leaves. Whenever
+        I see butterflies in the garden, I wish to fly like them. I want to suck
+        the juice from flowers. I will lie down on flowers all day long. The way
+        they fly shows joyfulness and freedom. The colourful wings cheer me up
+        always. Once I saw a butterfly very closely. The wings of the butterfly
+        are the best creation of God. These are like a painting. Even I want to
+        have a butterfly as a pet. I will play all day with that butterfly. Many
+        colourful butterflies came into our garden and played in daylight. I
+        love seeing them dancing in flowers.
+      </div>
+      <footer class="my-footer">
+        <i style="font-size: 24px;" class="fa share">&#xf1e0;</i>
+
+        <p>
+          Author: Pavithra Sekar<br />
+          <a href="mailto:pavithra24.sekar@gmail.com"
+            >pavithra24.sekar@gmail.com</a
+          >
+        </p>
+        <i style="font-size: 24px;" class="fa thumb">&#xf087;</i>
+      </footer>
+    </div>
+  </body>
+</html>
